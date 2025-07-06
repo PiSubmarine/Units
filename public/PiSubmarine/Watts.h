@@ -6,7 +6,7 @@ namespace PiSubmarine
     {
         double Value;
 
-        explicit constexpr Watts(double w) : Value(v) {}
+        explicit constexpr Watts(double w) : Value(w) {}
     };
 
     constexpr Watts operator"" _w(long double w)

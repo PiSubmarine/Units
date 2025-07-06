@@ -6,17 +6,17 @@ namespace PiSubmarine
     {
         double Value;
 
-        explicit constexpr Meters(double pa) : Value(v) {}
+        explicit constexpr Meters(double m) : Value(m) {}
     };
 
-    constexpr Meters operator"" _m(long double w)
+    constexpr Meters operator"" _m(long double m)
     {
-        return Meters(static_cast<double>(w));
+        return Meters(static_cast<double>(m));
     }
 
-    constexpr Meters operator"" _m(unsigned long long w)
+    constexpr Meters operator"" _m(unsigned long long m)
     {
-        return Meters(static_cast<double>(w));
+        return Meters(static_cast<double>(m));
     }
 
 }

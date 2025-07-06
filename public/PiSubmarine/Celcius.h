@@ -6,7 +6,7 @@ namespace PiSubmarine
     {
         double Value;
 
-        explicit constexpr Celcius(double c) : Value(v) {}
+        explicit constexpr Celcius(double c) : Value(c) {}
     };
 
     constexpr Celcius operator"" _w(long double c)
