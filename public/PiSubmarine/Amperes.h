@@ -6,7 +6,7 @@ namespace PiSubmarine
     {
         double Value;
 
-        explicit constexpr Amperes(double v) : value(v) {}
+        explicit constexpr Amperes(double v) : Value(v) {}
     };
 
     constexpr Amperes operator"" _a(long double v)
