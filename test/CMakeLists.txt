@@ -9,10 +9,11 @@ set(PiSubmarine.Units.Test.Sources
 	"PiSubmarine/AmperesTest.cpp"
 	"PiSubmarine/CelciusTest.cpp"
 	"PiSubmarine/MetersTest.cpp"
-	"PiSubmarine/Pascalstest.cpp"
+	"PiSubmarine/PascalsTest.cpp"
 	"PiSubmarine/WattsTest.cpp"
 	"PiSubmarine/NormalizedIntFractionTest.cpp"
 	"PiSubmarine/NormalizedFractionTest.cpp"
+	"PiSubmarine/SignedNormalizedFractionTest.cpp"
 )
 
 enable_testing()
