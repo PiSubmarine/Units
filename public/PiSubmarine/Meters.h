@@ -5,8 +5,6 @@ namespace PiSubmarine
     struct Meters
     {
         double Value;
-
-        explicit constexpr Meters(double m) : Value(m) {}
     };
 
     constexpr Meters operator"" _m(long double m)

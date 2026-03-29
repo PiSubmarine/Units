@@ -3,8 +3,9 @@
 
 namespace PiSubmarine
 {
-	TEST(UnitsTest, VoltsTest)
+	TEST(VoltsTest, Constructor)
 	{
-		Volts volts = 0.1_v;
+		Volts volts = 0.1_V;
+		ASSERT_EQ(volts.Value, 0.1);
 	}
 }
