@@ -1,5 +1,6 @@
 #pragma once
 #include <stdexcept>
+#include <string>
 
 namespace PiSubmarine
 {
@@ -10,7 +11,7 @@ namespace PiSubmarine
         {
             if (0.0 > fraction || fraction > 1.0)
             {
-                throw std::invalid_argument("NormalizedFraction value must be in range [0, 1]");
+                throw std::invalid_argument("NormalizedFraction value must be in range [0, 1], got " + std::to_string(fraction) + " instead.");
             }
         }
 

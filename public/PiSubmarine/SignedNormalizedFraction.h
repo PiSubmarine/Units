@@ -10,7 +10,7 @@ namespace PiSubmarine
         {
             if (-1.0 > fraction || fraction > 1.0)
             {
-                throw std::invalid_argument("SignedNormalizedFraction value must be in range [-1, +1]");
+                throw std::invalid_argument("NormalizedFraction value must be in range [-1, +1], got " + std::to_string(fraction) + " instead.");
             }
         }
 
