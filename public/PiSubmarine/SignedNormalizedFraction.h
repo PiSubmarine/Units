@@ -1,5 +1,6 @@
 #pragma once
 #include <stdexcept>
+#include "PiSubmarine/Exceptions.h"
 
 namespace PiSubmarine
 {
@@ -10,7 +11,7 @@ namespace PiSubmarine
         {
             if (-1.0 > fraction || fraction > 1.0)
             {
-                throw std::invalid_argument("NormalizedFraction value must be in range [-1, +1], got " + std::to_string(fraction) + " instead.");
+                Exceptions::Throw(std::invalid_argument("NormalizedFraction value must be in range [-1, +1], got " + std::to_string(fraction) + " instead."));
             }
         }
 

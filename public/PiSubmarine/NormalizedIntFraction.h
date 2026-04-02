@@ -7,6 +7,7 @@
 #include <concepts>
 #include <version>
 #include <limits>
+#include "PiSubmarine/Exceptions.h"
 
 #ifndef __cpp_concepts
 static_assert(false, "This compiler does not support Concepts.");
@@ -15,7 +16,7 @@ static_assert(false, "This compiler does not support Concepts.");
 namespace PiSubmarine
 {
     template<size_t Base>
-    class NormalizedIntFraction
+    struct NormalizedIntFraction
     {
         static_assert(Base > 0 && Base <= 64, "Base must be in the range [1, 64].");
 
@@ -33,7 +34,7 @@ namespace PiSubmarine
         {
             if (0 > value || value > MaxValue)
             {
-                throw std::overflow_error("Value (double) must be in range [0, 1]");
+                Exceptions::Throw(std::overflow_error("Value (double) must be in range [0, 1]"));
             }
         }
 
@@ -42,7 +43,7 @@ namespace PiSubmarine
         {
             if (0 > value || value > 1.0)
             {
-                throw std::overflow_error("Value (double) must be in range [0, 1]");
+                Exceptions::Throw(std::overflow_error("Value (double) must be in range [0, 1]"));
             }
 
             // Cannot be less than 0
