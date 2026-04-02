@@ -5,7 +5,7 @@ namespace PiSubmarine
 {
 	TEST(CelciusTest, Constructor)
 	{
-		Celcius unit = 0.1_C;
+		Celcius unit = 0.1_DegC;
 		ASSERT_EQ(unit.Value, 0.1);
 	}
 }

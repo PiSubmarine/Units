@@ -7,12 +7,12 @@ namespace PiSubmarine
         double Value;
     };
 
-    constexpr Celcius operator"" _C(long double c)
+    constexpr Celcius operator"" _DegC(long double c)
     {
         return Celcius(static_cast<double>(c));
     }
 
-    constexpr Celcius operator"" _C(unsigned long long c)
+    constexpr Celcius operator"" _DegC(unsigned long long c)
     {
         return Celcius(static_cast<double>(c));
     }
