@@ -8,6 +8,7 @@ set(PiSubmarine.Units.Test.Sources
 	"PiSubmarine/VoltsTest.cpp"
 	"PiSubmarine/AmperesTest.cpp"
 	"PiSubmarine/CelsiusTest.cpp"
+	"PiSubmarine/HertzTest.cpp"
 	"PiSubmarine/MetersTest.cpp"
 	"PiSubmarine/PascalsTest.cpp"
 	"PiSubmarine/WattsTest.cpp"
