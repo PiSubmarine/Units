@@ -7,7 +7,9 @@ project(PiSubmarine.Units.Test LANGUAGES CXX)
 set(PiSubmarine.Units.Test.Sources 
 	"PiSubmarine/VoltsTest.cpp"
 	"PiSubmarine/AmperesTest.cpp"
+	"PiSubmarine/AmpereHoursTest.cpp"
 	"PiSubmarine/CelsiusTest.cpp"
+	"PiSubmarine/CoulombsTest.cpp"
 	"PiSubmarine/AngularSectorTest.cpp"
 	"PiSubmarine/DegreesTest.cpp"
 	"PiSubmarine/HertzTest.cpp"
