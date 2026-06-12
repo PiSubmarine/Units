@@ -1,5 +1,6 @@
 #pragma once
 #include <stdexcept>
+#include <string>
 #include "PiSubmarine/Exceptions.h"
 
 namespace PiSubmarine
